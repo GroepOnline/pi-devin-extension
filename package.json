@@ -1,0 +1,47 @@
+{
+  "name": "@groeponline/pi-devin-extension",
+  "version": "0.1.0",
+  "description": "Pi extension that makes Pi act like the Devin autonomous AI software engineer.",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "clean": "rm -rf dist"
+  },
+  "author": "GroepOnline",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GroepOnline/pi-devin-extension.git"
+  },
+  "homepage": "https://github.com/GroepOnline/pi-devin-extension#readme",
+  "bugs": {
+    "url": "https://github.com/GroepOnline/pi-devin-extension/issues"
+  },
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "pi-coding-agent",
+    "devin"
+  ],
+  "dependencies": {
+    "@sinclair/typebox": "^0.34.52"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": ">=0.81.1",
+    "@earendil-works/pi-coding-agent": ">=0.81.1",
+    "@groeponline/pi-agent-orchestrator": "^0.18.0"
+  },
+  "peerDependenciesMeta": {
+    "@groeponline/pi-agent-orchestrator": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@earendil-works/pi-ai": "^0.81.1",
+    "@earendil-works/pi-coding-agent": "^0.81.1",
+    "typescript": "^5.5.4",
+    "@types/node": "^20.14.9"
+  }
+}
