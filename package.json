@@ -8,7 +8,8 @@
     "build": "tsc",
     "watch": "tsc -w",
     "clean": "rm -rf dist",
-    "test": "tsc -p tsconfig.test.json --noEmit && node --experimental-strip-types --test test/*.test.ts"
+    "test": "tsc -p tsconfig.test.json --noEmit && node --experimental-strip-types --test test/*.test.ts",
+    "prepare": "husky"
   },
   "author": "GroepOnline",
   "license": "MIT",
@@ -42,7 +43,10 @@
   "devDependencies": {
     "@earendil-works/pi-ai": "^0.81.1",
     "@earendil-works/pi-coding-agent": "^1.5.0",
-    "typescript": "^5.5.4",
-    "@types/node": "^20.14.9"
+    "@types/node": "^20.14.9",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.1",
+    "prettier": "^3.10.1",
+    "typescript": "^5.5.4"
   }
 }
